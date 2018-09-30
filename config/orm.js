@@ -13,6 +13,7 @@ function printQuestionMarks(num) {
 
 //Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
+  //column1=value, colum2=value2...
   var arr = [];
 
   // loop through the keys and push the key/value as a string int arr
@@ -45,7 +46,8 @@ var orm = {
     });
   },
 
-  // orm to add VALUES to burger_db
+  // vals is an array of values that we want to save to cols
+  // cols are the columns we want to insert the values into
   create: function (table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
@@ -67,6 +69,7 @@ var orm = {
     });
   },
   // orm to update values in burger_db
+  // objColVals would be the columns and values that you want to update
 
   update: function (table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;

@@ -9,7 +9,7 @@ var burger = {
     });
   },
   // orm to add values in to the burger database
-  // the variables cols and vals are arrays
+  //  cols and vals are arrays
   create: function (cols, vals, cb) {
     orm.create("burgers", cols, vals, function (res) {
       cb(res);
