@@ -1,6 +1,7 @@
 // Import MySQL connection.
 var connection = require("./connection.js");
 
+// Helper function for generating MySQL syntax
 function printQuestionMarks(num) {
   var arr = [];
 
@@ -104,5 +105,5 @@ var orm = {
   }
 };
 
-// Export the orm object for the model (burger.js)
+
 module.exports = orm;
