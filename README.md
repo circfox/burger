@@ -1,1 +1,1 @@
-# burger 
+This app uses MYSQL, Node Express, Handlebars and a homemade ORM to create a burger logger. When a user submits a burger name, the app displays the burger. When the user clicks the DEVOUR button, the burger moves to the DEVOURED section. This app uses Handlebars to generate HTML and follows the MVC design pattern and uses Node and MYSQL to query and route data.
