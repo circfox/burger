@@ -1,17 +1,28 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
 li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+  border-radius: 10px;
+  width: 50%;
+  font-family: "Permanent Marker", sans-serif;
+  font-weight: 400;
 }
+
 
 .label {
   font-weight: bold;
-}
+  background: #faebd7;
+ }
 
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
 }
 
 .form-group {
@@ -19,4 +30,46 @@ li {
 }
 body {
   background: lightcoral;
+  font-family: "Permanent Marker", sans-serif;
+  font-weight: 400;
 }
+
+.selector {
+  border-radius: 5px;
+  background: rgb(22, 209, 209);
+  height: 25px;
+}
+
+#newburg {
+  border-radius: 6px;
+  width: 250px;
+  height: 30px;
+}
+
+.change-devoured {
+  background: rgb(22, 209, 209);
+  border-radius: 4px;
+
+}
+.change-devoured:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  transition: all 1s; 
+}
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
